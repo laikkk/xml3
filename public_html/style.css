@@ -1,0 +1,57 @@
+
+html {
+    background-color: #7FCA9F;
+    width: 100%;
+}
+body {
+    font-family: 'Lato',serif;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 960px;
+}
+table {
+    margin: 0 auto;
+}
+
+td {
+    background: none repeat scroll 0 0 #FCFEFD;
+    padding: 15px;
+}
+tr:first-child {
+    background-color: #4A789C;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 10px;
+}
+tr:nth-child(even) td
+{
+    background:#cce5fb;
+}
+
+
+
+.drugatabela tr:nth-child(even) td
+{
+    background:	#85C1F5;
+}
+.trzeciatabela tr:nth-child(even) td
+{
+    background:	#4A789C;
+}
+
+.czwartatabela tr:last-child td:first-child
+{
+    background:	#E96D63;
+}
+.czwartatabela tr:last-child td:nth-child(2)
+{
+    background:	#F4BA70;
+}
+.czwartatabela tr:last-child td:last-child
+{
+    background:	#85C1F5;
+}
+
+tr:not(:first-child):hover td{
+    background:#F4BA70;
+}

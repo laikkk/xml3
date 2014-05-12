@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uniwersytet>
+	<grupy>
+		<grupa id_grupy="A">A</grupa>
+		<grupa id_grupy="B">B</grupa>
+		<grupa id_grupy="C">C</grupa>
+		<grupa id_grupy="D">D</grupa>
+	</grupy>
+	<studenci>
+		<student id_ref_grupy="A" plec="k">
+			<imie>Ala</imie>
+			<nazwisko>Kowalska</nazwisko>
+			<wiek>12</wiek>
+			<strona_internetowa>www.wp.pl</strona_internetowa>
+			<email>ala.kowalska@wp.pl</email>
+		</student>
+		<student id_ref_grupy="A" plec="m">
+			<imie>Krzychu</imie>
+			<nazwisko>Nowak</nazwisko>
+			<wiek>22</wiek>
+			<strona_internetowa>www.wp.pl</strona_internetowa>
+			<email>Kowal@wp.pl</email>
+		</student>
+		<student id_ref_grupy="B" plec="m">
+			<imie>Adam</imie>
+			<nazwisko>Piatek</nazwisko>
+			<wiek>55</wiek>
+			<strona_internetowa>www.wp.pl</strona_internetowa>
+			<email>Adam@wp.pl</email>
+		</student>
+		<student id_ref_grupy="B" plec="k">
+			<imie>Ela</imie>
+			<nazwisko>Zielinska</nazwisko>
+			<wiek>19</wiek>			
+			<email>elka@wp.pl</email>
+		</student>
+	</studenci>
+</uniwersytet>
