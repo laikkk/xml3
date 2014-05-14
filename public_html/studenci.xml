@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <uniwersytet>
-	<grupy>
+	<grupy >
 		<grupa id_grupy="A">A</grupa>
 		<grupa id_grupy="B">B</grupa>
 		<grupa id_grupy="C">C</grupa>

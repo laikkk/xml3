@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    <xsd:element name="uniwersytet">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="grupy" type="MOJgrupy" minOccurs="1"
+                             maxOccurs="unbounded" />
+                <xsd:element name="studenci" type="MOJstudenci" minOccurs="1"
+                             maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <!--    grupy-->
+    <xsd:complexType name="MOJgrupy">    
+        <xsd:sequence>
+            <xsd:element name="grupa" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:string">
+                            <xsd:attribute name="id_grupy" type="xsd:string" use="required"/>
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>     
+        </xsd:sequence>
+        <!--        <xsd:attribute name="id_grupy" type="xsd:ID" />                 -->
+    </xsd:complexType>
+
+    
+    
+    <xsd:complexType name="MOJgrupa">     
+        <xsd:attribute name="id_grupy" type="xsd:ID" />  
+    </xsd:complexType>
+    
+    <!--    studenci-->
+    <xsd:complexType name="MOJstudenci">
+        <xsd:sequence>
+            <xsd:element name="student" type="MOJstudent" minOccurs="1"
+                         maxOccurs="unbounded" />          
+        </xsd:sequence>       
+    </xsd:complexType>
+    
+    <xsd:complexType name="MOJstudent">
+        <xsd:all>
+            <xsd:element name="imie" type="xsd:string" />      
+            <xsd:element name="nazwisko" type="xsd:string" /> 
+            <xsd:element name="wiek" type="xsd:int" />  
+            <xsd:element name="strona_internetowa" type="xsd:string" minOccurs="0"
+                         maxOccurs="1" />    
+            <xsd:element name="email" type="xsd:string" />                         
+        </xsd:all>
+        <xsd:attribute name="id_ref_grupy" type="xsd:IDREF" />
+        <xsd:attribute name="plec" type="xsd:string" />             
+    </xsd:complexType>
+</xsd:schema>
